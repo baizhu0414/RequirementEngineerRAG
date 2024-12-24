@@ -42,7 +42,7 @@ while True:
 
     generate_input = {
         "input_ids":input_ids,
-        "max_new_tokens":2048, # 限制生成的最大长度。
+        "max_new_tokens":4096, # 限制生成的最大长度。
         "do_sample":True, # 决定是否使用随机性生成。
         "top_k":50, # 限制生成时考虑的最可能的k个token。
         "top_p":0.95, # 控制生成时核采样的累积概率阈值。
