@@ -7,6 +7,7 @@
 ```shell
 conda env create -f environment.yml
 ```
+[environment.yml](./environment.yml)
 
 ## 1.3、结构
 
@@ -23,7 +24,6 @@ conda env create -f environment.yml
 ```shell
 https://github.com/Mintplex-Labs/anything-llm
 ```
-[environment.yml](./environment.yml)
 ## 2.2、启动
 参考[readme-env.txt](./readme-env.txt)
 
