@@ -1,8 +1,9 @@
 from nltk.translate.meteor_score import meteor_score
 from nltk.tokenize import word_tokenize
 
-import nltk
-nltk.download('wordnet')
+#  第一次使用或更换位置时需要运行此代码。
+# import nltk
+# nltk.download('wordnet')
 
 
 # # 输入句子
@@ -44,9 +45,27 @@ the application software requirements necessary to allow developers create the s
 acceptors evaluate whether it meets those needs."
 
 # 分词
-reference_tokens = word_tokenize(reference)
-candidate_tokens = word_tokenize(candidateNoRAG)
+# reference_tokens = word_tokenize(reference)
+# candidate_tokens = word_tokenize(candidateNoRAG)
 
-# 计算METEOR分数，传入一个包含参考文本列表的列表
-score = meteor_score([reference_tokens], candidate_tokens)
-print("METEOR score:", score)
+while True:
+    print("输入reference：")
+    reference_ = []
+    while True:
+        line = input()
+        if line == "":  # 遇到空行时结束输入
+            break
+        reference_.append(line) 
+    print("输入cancidate：")
+    candidate_ = []
+    while True:
+        line2 = input()
+        if line2 == "":  # 遇到空行时结束输入
+            break
+        candidate_.append(line2)
+    # 计算METEOR分数，传入一个包含参考文本列表的列表
+    ref = word_tokenize("\n".join(reference_))
+    cand = word_tokenize("\n".join(candidate_))
+    print("ref:", ref, "\n candi:", cand)
+    score = meteor_score([ref], cand)
+    print("METEOR score:", score)

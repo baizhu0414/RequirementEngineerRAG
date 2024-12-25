@@ -1,0 +1,119 @@
+Q1:
+The system should ensure high standards of security and access control through:
+a) Prevent cross-site scripting
+b) Validate the incoming data / user request
+c) Encode the incoming data / user request
+d) Prevent SQL Injection
+e) Utilize parameterized queries
+f) Sanitize the user-inputs
+g) Validate the data both at the client and server
+h) Do not allow hard delete and perform only soft tagging the row for deletion
+# RAG METEOR score: 0.36483640537694595
+# No RAG METEOR score: 0.045801526717557245
+
+
+Q2:
+The system should ensure high scalability and performance through:
+a) Use of cache for storing frequent data
+b) Use of AJAX based technology to improve user experience. Aggressive page loading to
+be considered based on the screen and estimate usage pattern
+c) Leverage Asynchronous HTTP socket capabilities of web server for scalability and
+performance
+d) Host all the static content (documents, images) on the web server
+e) The search results should be fetched from the database in batches of 10 or 20 maximum
+as configured within the application
+f) Display of records on the screen in batches/paged manner
+g) The search should fetch only the fields that need to be displayed to the user. Only when
+the user clicks on a particular record to view its further details should a query be fired to
+fetch the additional details for this particular record only
+h) A hierarchical cache should be configured and used for caching of results of most
+# RAG METEOR score: 0.15854374633000584
+# No RAG METEOR score: 0.0888157894736842
+
+
+Q3:
+Individualization and user adaptation : 
+Adapting the content and the navigation of
+a user interface to individual users or user groups can be a useful mechanism for
+providing information that is of interest to the users and for making access to
+relevant information more efficient. User adaptation can also be important for
+making the user interface more accessible. Different approaches can be used for
+achieving these goals, like providing users with means for customizing the user
+interface to their personal needs i.e. individualization designing content and
+navigation differently for varying user groups or roles i.e. such as employees of
+different levels, citizens etc, monitoring the user’s behaviour and adapting to the
+user’s goals that are inferred from the behaviour observed, recommending
+information that is potentially more relevant or interesting to the specific user,
+based on the behaviour of all users or a user group.
+# RAG METEOR score: 0.4393492890576702
+# No RAG METEOR score: 0.21099440853595977
+
+
+Q4:
+Redundant Array of Inexpensive Disks (RAID): 
+A RAID system appears as one very large, reliable disk to the CPU. The main reason for using RAID storage is its reliability. RAID has the same advantages as shadowing and striping at a lower cost. There are several types/levels of RAID implementations, including: RAID 0 (known as disk striping), RAID 1 (known as disk shadowing), RAID 3 (in which data is distributed in small increments across all data disks and adds a parity value to a separate disk for recovery if any disk fails, RAID 4 (in which data is distributed in large chunks across all data disks and also has a single parity disk. RAID 4 intended to overcome performance penalties of RAID 3 for small transfers. RAID 5 (in which parity over RAID 3 or RAID 4 implementations), and RAID 6 ( in which two parity disks in addition to data disks are used in an attempt to further improve performance). In a RAID 5 implementation, the data is stored as are check sums and other information about the contents of each disk in the array. If one disk is lost, the others can use the check sums and other stored information to recreate the lost data. Storage system vendors may provide additional enhancements to RAID level implementations to improve performance and reliability.
+廉价磁盘冗余阵列 （RAID）：RAID 系统对 CPU 来说是一个非常大、可靠的磁盘。使用 RAID 存储的主要原因是它的可靠性。RAID 具有与影子和条带化相同的优势，但成本较低。RAID 实现有几种类型/级别，包括：RAID 0（称为磁盘条带化）、RAID 1（称为磁盘影子）、RAID 3（其中数据以小增量分布在所有数据磁盘上，并将奇偶校验值添加到单独的磁盘上，以便在任何磁盘发生故障时进行恢复）、RAID 4（其中数据以大块形式分布在所有数据磁盘上，并且还具有单个奇偶校验磁盘。RAID 4 旨在克服 RAID 3 在小传输时的性能损失。RAID 5（RAID 3 或 RAID 4 实现奇偶校验）和 RAID 6（除数据磁盘外，还使用两个奇偶校验磁盘以尝试进一步提高性能）。在 RAID 5 实现中，数据与校验和以及有关阵列中每个磁盘内容的其他信息一样存储。如果一个磁盘丢失，其他磁盘可以使用校验和其他存储的信息来重新创建丢失的数据。存储系统供应商可能会为 RAID 级别实施提供额外的增强功能，以提高性能和可靠性。
+# RAG METEOR score: 0.4535822647507232
+# No RAG METEOR score: 0.14577893820713664
+
+
+Q5:
+what is the Overview of Functional Requirements in "Space Fractions" project ?
+A:
+The umbrella will be a singular component, providing links to projects relating to fractions,
+decimals, and percents in a format accessible over the World Wide Web.
+The "Space Fractions" game will have the following functional components:
+1. An introductory movie to set up the storyline.
+2. A main menu, including a brief help section.
+3. A series of fraction questions (testing arithmetic, equivalence, graphical interpretation,
+and improper versus proper fraction skills) that sequentially form a storyline related to the
+introduction.
+4. An ending scene where the user's score is calculated and ranked, with an option to quit
+the game or try again.
+In addition, a component accessible over the World Wide Web will allow the series of fraction
+questions to be updated by an administrator of the game.
+# RAG METEOR score: 0.2467934276905752
+# No RAG METEOR score: 0.1701998054065864
+
+Q6:
+Introduce the purpose of Grid 3D Application?
+A:
+Background to the Project Effort
+The need for a method of visualisation of biological data has been identified. Currently, there are
+many groups offering many different tools for visualising data. These visualisation tools provide a
+range from tabular to three-dimensional graphical views. However, a need has been identified for a
+tool that can display data in a three dimensional environment, which allows the user to investigate
+the data and easily see various attributes of the data at a glance.
+A need for the above-mentioned tool has been identified and, there being no applicable tool
+available, a project to create such a tool was conceptualised.
+The primary stakeholder (see 1.2.1) has made the case that the tool to be created is of relevance use
+and there is a real need for it. This need is established through continual use of other similar tools
+and a continued identification of their shortfalls.
+Goals of the Product
+We want to give the user the ability to visualise and investigate their data in a three dimensional
+environment. The user should have the ability to see (at a glance) the differences of various selected
+attributes of their data.
+The overall goal of this product is to provide the users with something that has previously been
+unavailable.
+# RAG METEOR score: 0.16793722636554262
+# No RAG METEOR score: 0.11150532184490622
+
+Q7:
+Introduce The Users of the Grid 3D Application?
+A:
+People who may use this product;
+Anyone investigating proteins.
+Research Scientists
+Data-mining Scientists
+Research Students
+Organisations in this field
+Some attributes the product might cater for;
+Non-English speakers
+People wanting differing degrees of detail
+People who want to analyse their data (in their preferred format)
+# RAG METEOR score: 0.10077519379844962
+# No RAG METEOR score: 0.08250825082508252
+
+
+
+
